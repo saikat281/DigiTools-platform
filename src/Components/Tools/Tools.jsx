@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import AvailableTools from './AvailableTools/AvailableTools';
 import SelectedTools from './SelectedTools/SelectedTools';
 
 
-const Tools = () => {
+const Tools = ({ToolsPromise,selected,setSelected}) => {
+    const ToolsData = use(ToolsPromise);
+   // console.log(ToolsData);
     const [toggleBtn,setToggleBtn] = useState("product")
     return (
         <div className='mt-[150px] flex flex-col justify-center items-center'>
@@ -18,7 +20,7 @@ const Tools = () => {
 
             <div>
 
-                {toggleBtn === "product" ? <AvailableTools></AvailableTools> : <SelectedTools></SelectedTools>}
+                {toggleBtn === "product" ? <AvailableTools ToolsData={ToolsData} selected={selected} setSelected={setSelected}></AvailableTools> : <SelectedTools selected={selected}></SelectedTools>}
                 
                 
             </div>

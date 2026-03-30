@@ -1,17 +1,33 @@
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
 import Tools from './Components/Tools/Tools'
+import { ToastContainer } from 'react-toastify'
+
+const ToolsData = async () => {
+  const res = fetch("/Data.json")
+  return (await res).json();
+}
 
 function App() {
 
-
+  const [selected, setSelected] = useState([]);
+  const ToolsPromise = ToolsData();
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar selected={selected}></Navbar>
       <hr className='opacity-[10%]' />
       <Banner></Banner>
-      <Tools></Tools>
+      <Suspense>
+        <Tools ToolsPromise={ToolsPromise} selected={selected} setSelected={setSelected}></Tools>
+      </Suspense>
+
+
+
+
+
+      <ToastContainer />
     </>
   )
 }

@@ -1,9 +1,10 @@
 import React from 'react';
 
-const SelectedTools = () => {
+const SelectedTools = ({selected}) => {
+    console.log(selected)
     return (
         <div>
-            <h1>Selected Tools</h1>
+            
         </div>
     );
 };

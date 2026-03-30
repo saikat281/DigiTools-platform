@@ -5,7 +5,7 @@ const ToolsCard = ({ tool, selected, setSelected,add,setAdd }) => {
     // console.log(tool)
     const [selectBtn, setSelectbtn] = useState(false);
     const handleSelected = (tool) => {
-        console.log(tool)
+        //console.log(tool)
         setSelected([...selected, tool])
         setSelectbtn(true);
         setAdd(add + tool.price)

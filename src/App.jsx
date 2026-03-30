@@ -4,6 +4,7 @@ import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
 import Tools from './Components/Tools/Tools'
 import { ToastContainer } from 'react-toastify'
+import Steps from './Components/Steps/Steps'
 
 const ToolsData = async () => {
   const res = fetch("/Data.json")
@@ -22,6 +23,7 @@ function App() {
       <Suspense>
         <Tools ToolsPromise={ToolsPromise} selected={selected} setSelected={setSelected}></Tools>
       </Suspense>
+      <Steps></Steps>
 
 
 

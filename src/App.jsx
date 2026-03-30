@@ -6,6 +6,8 @@ import Tools from './Components/Tools/Tools'
 import { ToastContainer } from 'react-toastify'
 import Steps from './Components/Steps/Steps'
 import Pricing from './Components/Pricing/Pricing'
+import Workflow from './Components/Workflow/Workflow'
+import Footer from './Components/Footer/Footer'
 
 const ToolsData = async () => {
   const res = fetch("/Data.json")
@@ -26,6 +28,8 @@ function App() {
       </Suspense>
       <Steps></Steps>
       <Pricing></Pricing>
+      <Workflow></Workflow>
+      <Footer></Footer>
 
 
 

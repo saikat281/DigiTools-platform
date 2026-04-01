@@ -1,4 +1,4 @@
-# Project Name: 🛒Digital Tools Marketplace
+# Project Name: 🛒DigiTools -  A Digital Tools Buying Marketplace
 
 ## 📖 Description
 A modern and responsive web application where users can  purchase digital tools such as software, templates, and online services.  

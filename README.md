@@ -1,16 +1,37 @@
-# React + Vite
+# Project Name: 🛒Digital Tools Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Description
+A modern and responsive web application where users can  purchase digital tools such as software, templates, and online services.  
+The platform provides shopping experience with product listings, a dynamic cart system, and real-time notifications using toast alerts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Technologies Used
+- **Frontend:** React.js  
+- **Styling:** CSS / Tailwind CSS  
+- **State Management:** React Hooks
+- **Notifications:** React Toastify  
+- **Data Handling:** JSON  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+### 🔄 Dynamic Product & Cart Toggle System
+- Users can switch between the product listing and cart view using toggle buttons  
+- Product section is displayed by default  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛒 Interactive Cart Functionality
+- Add and remove products from the cart  
+- Real-time cart count displayed in the navbar  
+- Total price calculation  
+- **Proceed to Checkout** button clears all items from the cart  
+
+### 🔔 Real-Time Notifications
+- Toast alerts for:
+  - Adding products to cart  
+  - Removing products  
+  - Checkout actions  
+
+
+

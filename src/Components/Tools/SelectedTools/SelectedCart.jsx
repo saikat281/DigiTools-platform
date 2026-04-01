@@ -1,10 +1,12 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const SelectedCart = ({ tool, selected, setSelected, add, setAdd }) => {
     const handleRemoveCart = (tool) => {
         const updateCart = selected.filter(cart => cart !== tool);
         setSelected(updateCart)
         setAdd(add - tool.price)
+        toast.info("Item Removed")
     }
     return (
         <div className='flex justify-between items-center p-3 rounded-lg bg-gray-100 shadow-b-sm'>

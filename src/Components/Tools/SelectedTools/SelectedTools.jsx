@@ -4,7 +4,6 @@ import SelectedCart from './SelectedCart';
 import { toast } from 'react-toastify';
 
 const SelectedTools = ({ selected, setSelected, add, setAdd }) => {
-    //console.log(selected)
     const handleRemoveAll = () => {
         setSelected([]);
         toast("🦄 Checkout Successfull!");

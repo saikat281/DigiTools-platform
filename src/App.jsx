@@ -13,19 +13,19 @@ const ToolsData = async () => {
   const res = fetch("/Data.json")
   return (await res).json();
 }
-
+const ToolsPromise = ToolsData();
 function App() {
 
   const [selected, setSelected] = useState([]);
-  const ToolsPromise = ToolsData();
+
   return (
     <>
       <Navbar selected={selected}></Navbar>
       <hr className='opacity-[10%]' />
       <Banner></Banner>
-      <Suspense>
-        <Tools ToolsPromise={ToolsPromise} selected={selected} setSelected={setSelected}></Tools>
-      </Suspense>
+
+      <Tools ToolsPromise={ToolsPromise} selected={selected} setSelected={setSelected}></Tools>
+
       <Steps></Steps>
       <Pricing></Pricing>
       <Workflow></Workflow>

@@ -7,7 +7,8 @@ const SelectedTools = ({ selected, setSelected, add, setAdd }) => {
     //console.log(selected)
     const handleRemoveAll = () => {
         setSelected([]);
-        toast.success("Checkout Successfull!")
+        toast("🦄 Checkout Successfull!");
+        setAdd(0);
     }
     return (
         <div className='w-full p-6 shadow-lg'>

@@ -8,9 +8,10 @@ const Pricing = () => {
                     <h1 className='text-4xl font-bold'>Simple, Transparent Pricing</h1>
                     <p className='text-[14px] text-gray-600'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
                 </div>
-                <div className='grid grid-cols-3  justify-items-center'>
-                    {/* 1 */}
-                    <div className="card w-96 bg-base-100 shadow-lg ">
+                {/* Parent */}
+                <div className='grid grid-cols-1 gap-6 md:gap-0 lg:grid-cols-3  justify-items-center '>
+                    {/* child-1 */}
+                    <div className="card w-96 bg-base-100 shadow-lg transition-all duration-300 hover:scale-105">
                         <div className="card-body">
                             {/* <span className="badge badge-xs badge-warning">Most Popular</span> */}
 
@@ -50,9 +51,9 @@ const Pricing = () => {
                             </div>
                         </div>
                     </div>
-                    {/* 2 */}
-                    <div className="relative card w-96 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-lg ">
-                        <div className="absolute card-body w-full">
+                    {/* child-2 */}
+                    <div className="relative card w-96 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-lg transition-all duration-300 hover:scale-105">
+                        <div className=" card-body w-full">
                             <h2 className="text-3xl font-bold">Pro</h2>
                             <p className='text-gray-300'>Best for professionals</p>
                             <span className="text-3xl font-bold mt-2">$29/month</span>
@@ -88,12 +89,12 @@ const Pricing = () => {
                                 <button className="btn text-balck bg-white btn-block rounded-full hover:opacity-95 font-light">Contact Sales</button>
                             </div>
                         </div>
-                        <div className='absolute left-[130px] bottom-[95%]'>
+                        <div className='absolute left-[145px] bottom-[95%]'>
                             <button className='btn bg-amber-200 text-amber-700 text-[12px] rounded-full font-light'>Most Popular</button>
                         </div>
                     </div>
-                    {/* 3 */}
-                    <div className="card w-96 bg-base-100 shadow-lg">
+                    {/* child-3 */}
+                    <div className="card w-96 bg-base-100 shadow-lg transition-all duration-300 hover:scale-105">
                         <div className="card-body">
                             {/* <span className="badge badge-xs badge-warning">Most Popular</span> */}
 

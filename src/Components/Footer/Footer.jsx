@@ -6,10 +6,10 @@ const Footer = () => {
     return (
         <div className='bg-[#101727] text-white p-10'>
             <div className='w-10/12 mx-auto pt-[60px]'>
-                <footer className="footer sm:footer-horizontal ">
-                    <aside>
+                <footer className="footer sm:footer-horizontal flex flex-col md:flex-row md:justify-between items-center ">
+                    <aside className='flex flex-col justify-center md:justify-normal items-center md:items-start '>
                         <h1 className='text-4xl font-bold'>DigiTools</h1>
-                        <p className='text-gray-400 font-light text-[14px]'>
+                        <p className='text-gray-400 font-light text-[14px] text-center md:text-start'>
                             Premium digital tools for creators, <br /> professionals, and businesses. Work smarter <br /> with our suite of powerful tools.
                         </p>
                     </aside>
